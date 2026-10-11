@@ -4,7 +4,7 @@ These scripts import the team's existing common.train.TrainConfig/train_experime
 
 ## Exact team dataset
 
-Use data/processed/raid_balanced.csv from the partner's repo at base commit 2850ea1e9503695d19fc63780b996a40198356d4. Its SHA-256 is f95ce226d32562d0f8b7e18946931b20be61ecdeab47d13af32a15c580685ca4. There are 1,600 responses, four source-model labels (chatgpt, llama-chat, mistral-chat, cohere-chat), and news/poetry/recipes/reviews domains. Each domain has 100 matched prompts. The original 80/10/10 source split is retained: 1,280 train, 160 validation and 160 test responses. All examples use sampling, repetition_penalty=no, attack=none. One source model represents each of four distinct families.
+Use data/processed/raid_balanced.csv at repository base commit 2850ea1e9503695d19fc63780b996a40198356d4. Its SHA-256 is f95ce226d32562d0f8b7e18946931b20be61ecdeab47d13af32a15c580685ca4. There are 1,600 responses, four source-model labels (chatgpt, llama-chat, mistral-chat, cohere-chat), and news/poetry/recipes/reviews domains. Each domain has 100 matched prompts. The original 80/10/10 source split is retained: 1,280 train, 160 validation and 160 test responses. All examples use sampling, repetition_penalty=no, attack=none. One source model represents each of four distinct families.
 
 ## Run
 
@@ -26,7 +26,7 @@ Shared defaults: embedding128, hidden/channels128, dropout0.3, AdamW lr0.001/wei
 
 ## Results
 
-results/seed42/summary.csv contains six runs. Each condition/model directory follows the partner's format: config.json, vocabulary.json, history.json, test_metrics.json, test_predictions.csv, confusion_matrix.png, learning_curves.png. Checkpoints are ignored by Git and excluded from the delivery ZIP.
+results/seed42/summary.csv contains six runs. Each condition/model directory follows the shared experiment format: config.json, vocabulary.json, history.json, test_metrics.json, test_predictions.csv, confusion_matrix.png, learning_curves.png. Checkpoints are ignored by Git.
 
 prompt_benefit.csv compares input+output minus output-only accuracy and macro-F1 overall and within each domain. domain_scores.csv includes all three conditions by domain. prompt_benefit_by_domain.png shows accuracy differences and 95% paired percentile bootstrap intervals from 2,000 matched-source resamples. Ten independent test prompts per domain means estimates are imprecise. Intervals are conditional on trained models; they do not account for training-seed variation or multiple domain comparisons. Domain slicing is not RQ3 domain-held-out transfer.
 

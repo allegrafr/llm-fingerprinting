@@ -1,6 +1,6 @@
 # RQ4: What characteristics distinguish the generators?
 
-Reuse the exact team dataset and shared CNN/LSTM/trainer described in rq2/README.md. No shared modules or original data are replaced.
+Uses the team dataset and shared CNN/LSTM training pipeline described in rq2/README.md.
 
 ```bash
 python rq4/run_rq4.py --device cpu --ablations
@@ -14,4 +14,4 @@ For neural ablations, first select the same first256 response tokens as the RQ2 
 
 Ablation outputs use the shared directory/file format under results/seed42/ablations/CONDITION/MODEL. ablation_summary.csv reports held-out accuracy, macro-F1 and F1 decrease from baseline. This baseline should reproduce the RQ2 output-only run on the same device and software environment.
 
-Discuss linguistic versus structural differences, then whether ablations support usefulness for classification. Descriptive differences do not establish reliance. Shuffling simultaneously changes syntax, local phrases and layout; removing formatting changes token counts. These are not isolated causal interventions. Raw lexical diversity depends on length; first100 excludes shorter outputs, so inspect usable counts and domain effects.
+Descriptive differences do not establish classifier reliance. Shuffling simultaneously changes syntax, local phrases and layout; removing formatting changes token counts. These are not isolated causal interventions. Raw lexical diversity depends on length; first100 excludes shorter outputs, which limits comparisons across generators and domains.
