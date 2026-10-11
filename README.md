@@ -11,15 +11,23 @@ CMPSC 448 Midterm Project
 
 ## Dataset
 
-We use a balanced subset of RAID(https://huggingface.co/datasets/liamdugan/raid) consisting of approximately 1,600
+We use a balanced subset of [RAID](https://huggingface.co/datasets/liamdugan/raid) consisting of 1,600
 LLM-generated responses.
 
-Planned structure:
+Dataset structure:
 
 - 4 LLM families
 - 4 domains
 - 100 matched prompts per domain
 - each prompt answered by all 4 LLMs
+
+Build the subset with `python3 scripts/build_dataset.py`. See
+[data/README.md](data/README.md) for the exact filters, reproducibility manifest,
+and source-grouped 80/10/10 train/validation/test split.
+The dataset and shared CNN/LSTM pipeline are implemented. See
+[rq1/README.md](rq1/README.md) for setup, training, and the first RQ1 results.
+[rq3/README.md](rq3/README.md) documents completed domain-held-out experiments
+and a comparison with RQ1 on the same test responses.
 
 ## Repository Structure
 
