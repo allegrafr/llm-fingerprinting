@@ -61,7 +61,7 @@ def save_evaluation(directory, rows, result, truth, predictions, probabilities, 
     plot = ax.imshow(matrix, cmap="Blues")
     figure.colorbar(plot, ax=ax)
     ax.set(xticks=range(len(labels)), yticks=range(len(labels)), xticklabels=labels,
-           yticklabels=labels, xlabel="Predicted model", ylabel="True model", title="RQ1 test confusion matrix")
+           yticklabels=labels, xlabel="Predicted model", ylabel="True model", title="Test confusion matrix")
     plt.setp(ax.get_xticklabels(), rotation=25, ha="right")
     for i, row in enumerate(matrix):
         for j, value in enumerate(row):

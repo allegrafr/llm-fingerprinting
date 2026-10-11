@@ -66,10 +66,11 @@ orders; changing CSV row order does not change the result.
 - Fit tokenizers/vocabularies on each experiment's training data only. Use
   validation for model selection and reserve test data for final evaluation.
 
-Four-class balanced chance accuracy is 25%. The planned RQ3 comparison is
+Four-class balanced chance accuracy is 25%. The RQ3 comparison is
 leave-one-domain-out, with all models retrained for each held-out domain.
 The shared CNN/LSTM implementation and initial RQ1 results are documented in
-`rq1/README.md`. RQ3 domain-held-out experiments are next.
+`rq1/README.md`. Completed RQ3 domain-held-out experiments are documented in
+`rq3/README.md`.
 
 The Hugging Face dataset card lists the dataset under MIT. Retain attribution
 to RAID in the report. The manifest identifies exactly which public source

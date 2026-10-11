@@ -1,0 +1,159 @@
+{
+  "accuracy": 0.25,
+  "macro_f1": 0.1,
+  "classification_report": {
+    "chatgpt": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 100.0
+    },
+    "cohere-chat": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1-score": 0.4,
+      "support": 100.0
+    },
+    "llama-chat": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 100.0
+    },
+    "mistral-chat": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 100.0
+    },
+    "accuracy": 0.25,
+    "macro avg": {
+      "precision": 0.0625,
+      "recall": 0.25,
+      "f1-score": 0.1,
+      "support": 400.0
+    },
+    "weighted avg": {
+      "precision": 0.0625,
+      "recall": 0.25,
+      "f1-score": 0.1,
+      "support": 400.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      100,
+      0,
+      0
+    ]
+  ],
+  "label_order": [
+    "chatgpt",
+    "cohere-chat",
+    "llama-chat",
+    "mistral-chat"
+  ],
+  "n": 400,
+  "loss": 6.599017734527588,
+  "best_epoch": 12,
+  "best_validation_macro_f1": 0.6111287773666358,
+  "elapsed_seconds": 16.25283087498974,
+  "seed": 42,
+  "by_domain": {
+    "recipes": {
+      "accuracy": 0.25,
+      "macro_f1": 0.1,
+      "classification_report": {
+        "chatgpt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 100.0
+        },
+        "cohere-chat": {
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1-score": 0.4,
+          "support": 100.0
+        },
+        "llama-chat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 100.0
+        },
+        "mistral-chat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 100.0
+        },
+        "accuracy": 0.25,
+        "macro avg": {
+          "precision": 0.0625,
+          "recall": 0.25,
+          "f1-score": 0.1,
+          "support": 400.0
+        },
+        "weighted avg": {
+          "precision": 0.0625,
+          "recall": 0.25,
+          "f1-score": 0.1,
+          "support": 400.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ]
+      ],
+      "label_order": [
+        "chatgpt",
+        "cohere-chat",
+        "llama-chat",
+        "mistral-chat"
+      ],
+      "n": 400
+    }
+  }
+}

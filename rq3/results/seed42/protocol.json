@@ -1,0 +1,42 @@
+{
+  "research_question": "RQ3",
+  "dataset_sha256": "f95ce226d32562d0f8b7e18946931b20be61ecdeab47d13af32a15c580685ca4",
+  "rq3_code_sha256": {
+    "run_rq3.py": "ed93cc8455a51bad4f79cb8295be4188247d2de7306131c34e169a799279890a",
+    "splits.py": "562e8005319a7a446b1bb824c312ad71b3659b4346eff0078f435eb54b12ce5a",
+    "summarize.py": "551b0a974dd5d699715802dade4e6a7f1097e4bd9e2a63bb34a51fe175173c89"
+  },
+  "config": {
+    "seed": 42,
+    "epochs": 15,
+    "patience": 4,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "embedding_dim": 128,
+    "hidden_dim": 128,
+    "dropout": 0.3,
+    "max_length": 256,
+    "max_vocab": 20000,
+    "min_frequency": 2,
+    "device": "mps",
+    "input_mode": "output",
+    "cpu_threads": 4
+  },
+  "domains": [
+    "news",
+    "poetry",
+    "recipes",
+    "reviews"
+  ],
+  "models": [
+    "cnn",
+    "lstm"
+  ],
+  "rq1_prediction_sha256": {
+    "cnn": "8a99a7394a49205462c7c7e0e4d9c8444d9d51e10878fc8d66ff81f041e249e4",
+    "lstm": "db8074bb0138bb2361c9eb8496bc6edf466d82d7d4f5ffdf417f1458e226abac"
+  },
+  "split_policy": "Other domains: original train and validation rows; held-out domain: all rows. Other-domain test rows unused.",
+  "limitation": "RQ1 trains on 1280 responses; each RQ3 fold trains on 960. Matched evaluation controls test IDs, not training size."
+}

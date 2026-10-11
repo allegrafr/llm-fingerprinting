@@ -1,0 +1,9 @@
+model,held_out_domain,test_responses,accuracy,macro_f1,best_epoch
+cnn,news,400,0.3275,0.22705314009661834,9
+cnn,poetry,400,0.27,0.15344823446666797,9
+cnn,recipes,400,0.25,0.1,5
+cnn,reviews,400,0.38,0.3268230585065882,8
+lstm,news,400,0.25,0.10862424566496066,15
+lstm,poetry,400,0.2875,0.20381134363879766,3
+lstm,recipes,400,0.25,0.1,12
+lstm,reviews,400,0.305,0.20738536570426688,3

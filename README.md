@@ -26,7 +26,8 @@ Build the subset with `python3 scripts/build_dataset.py`. See
 and source-grouped 80/10/10 train/validation/test split.
 The dataset and shared CNN/LSTM pipeline are implemented. See
 [rq1/README.md](rq1/README.md) for setup, training, and the first RQ1 results.
-RQ3 domain-held-out experiments are next.
+[rq3/README.md](rq3/README.md) documents completed domain-held-out experiments
+and a comparison with RQ1 on the same test responses.
 
 ## Repository Structure
 
