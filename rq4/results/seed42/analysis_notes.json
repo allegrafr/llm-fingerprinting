@@ -1,0 +1,13 @@
+{
+  "descriptive_split": "train",
+  "descriptive_text": "full original response",
+  "classification_text": "first256 tokens before any ablation",
+  "ablations_run": true,
+  "limits": [
+    "Descriptive differences do not prove classifier reliance.",
+    "Raw lexical diversity depends on length; first100 excludes shorter responses.",
+    "Formatting removal preserves word content of the visible baseline window but changes token counts and layout.",
+    "Shuffling preserves the visible token multiset but alters syntax, phrases and line layout.",
+    "Each ablation refits training vocabulary and retrains; fixed single-seed results are exploratory."
+  ]
+}

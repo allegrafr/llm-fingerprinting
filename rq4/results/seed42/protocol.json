@@ -1,0 +1,27 @@
+{
+  "dataset_sha256": "f95ce226d32562d0f8b7e18946931b20be61ecdeab47d13af32a15c580685ca4",
+  "rows": 1600,
+  "sources": 400,
+  "models": [
+    "chatgpt",
+    "cohere-chat",
+    "llama-chat",
+    "mistral-chat"
+  ],
+  "domains": [
+    "news",
+    "poetry",
+    "recipes",
+    "reviews"
+  ],
+  "rows_by_split": {
+    "train": 1280,
+    "validation": 160,
+    "test": 160
+  },
+  "prompt_budget": 128,
+  "response_budget": 256,
+  "smoke_test": false,
+  "baseline_note": "Output-only refits training vocabulary on visible first-256-token responses. It reuses team models, training settings, dataset and splits; it is not copied RQ1 metrics.",
+  "controlled_comparison": "Input-only: first128 prompt tokens; output-only: first256 response tokens; both: those same components separated by the shared newline, maximum385 tokens. Vocabularies use visible training text only."
+}

@@ -1,0 +1,7 @@
+{
+  "bootstrap_unit": "source_id matched group",
+  "resamples": 2000,
+  "seed": 42,
+  "interval": "95% paired percentile bootstrap",
+  "limits": "Conditional on fixed trained models; no training-seed uncertainty or multiple-comparison adjustment. Ten test prompts per domain. Domain slicing is not RQ3 domain-held-out transfer."
+}

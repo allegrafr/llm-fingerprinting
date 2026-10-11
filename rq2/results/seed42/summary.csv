@@ -1,0 +1,7 @@
+model,input_mode,seed,accuracy,macro_f1,best_epoch,test_responses,smoke_test
+cnn,input,42,0.25,0.19825634057971012,2,160,False
+lstm,input,42,0.25,0.19223484848484848,5,160,False
+cnn,output,42,0.73125,0.7330671324929449,6,160,False
+lstm,output,42,0.5375,0.5191778722752174,6,160,False
+cnn,both,42,0.7,0.7028218694885361,10,160,False
+lstm,both,42,0.525,0.5157624801460418,15,160,False

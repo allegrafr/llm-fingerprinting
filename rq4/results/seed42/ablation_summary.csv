@@ -1,0 +1,7 @@
+model,condition,accuracy,macro_f1,best_epoch,test_responses,smoke_test,macro_f1_drop_from_baseline
+cnn,baseline,0.73125,0.7330671324929449,6,160,False,0.0
+lstm,baseline,0.5375,0.5191778722752174,6,160,False,0.0
+cnn,formatting_removed,0.69375,0.6926850876482187,11,160,False,0.040382044844726184
+lstm,formatting_removed,0.55625,0.5391420055916021,13,160,False,-0.01996413331638469
+cnn,token_order_shuffled,0.51875,0.4972144600233138,4,160,False,0.23585267246963104
+lstm,token_order_shuffled,0.60625,0.5924056457638547,9,160,False,-0.0732277734886373
