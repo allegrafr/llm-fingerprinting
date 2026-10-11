@@ -1,0 +1,387 @@
+{
+  "accuracy": 0.575,
+  "macro_f1": 0.5536489898989899,
+  "classification_report": {
+    "chatgpt": {
+      "precision": 0.5666666666666667,
+      "recall": 0.85,
+      "f1-score": 0.68,
+      "support": 40.0
+    },
+    "cohere-chat": {
+      "precision": 0.58,
+      "recall": 0.725,
+      "f1-score": 0.6444444444444445,
+      "support": 40.0
+    },
+    "llama-chat": {
+      "precision": 0.6538461538461539,
+      "recall": 0.425,
+      "f1-score": 0.5151515151515151,
+      "support": 40.0
+    },
+    "mistral-chat": {
+      "precision": 0.5,
+      "recall": 0.3,
+      "f1-score": 0.375,
+      "support": 40.0
+    },
+    "accuracy": 0.575,
+    "macro avg": {
+      "precision": 0.5751282051282051,
+      "recall": 0.575,
+      "f1-score": 0.5536489898989899,
+      "support": 160.0
+    },
+    "weighted avg": {
+      "precision": 0.5751282051282051,
+      "recall": 0.575,
+      "f1-score": 0.5536489898989899,
+      "support": 160.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      34,
+      3,
+      0,
+      3
+    ],
+    [
+      7,
+      29,
+      1,
+      3
+    ],
+    [
+      6,
+      11,
+      17,
+      6
+    ],
+    [
+      13,
+      7,
+      8,
+      12
+    ]
+  ],
+  "label_order": [
+    "chatgpt",
+    "cohere-chat",
+    "llama-chat",
+    "mistral-chat"
+  ],
+  "n": 160,
+  "loss": 1.4642741680145264,
+  "best_epoch": 10,
+  "best_validation_macro_f1": 0.5707511047333417,
+  "elapsed_seconds": 21.531371083983686,
+  "seed": 42,
+  "by_domain": {
+    "news": {
+      "accuracy": 0.35,
+      "macro_f1": 0.29258241758241754,
+      "classification_report": {
+        "chatgpt": {
+          "precision": 0.3888888888888889,
+          "recall": 0.7,
+          "f1-score": 0.5,
+          "support": 10.0
+        },
+        "cohere-chat": {
+          "precision": 0.3125,
+          "recall": 0.5,
+          "f1-score": 0.38461538461538464,
+          "support": 10.0
+        },
+        "llama-chat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 10.0
+        },
+        "mistral-chat": {
+          "precision": 0.5,
+          "recall": 0.2,
+          "f1-score": 0.2857142857142857,
+          "support": 10.0
+        },
+        "accuracy": 0.35,
+        "macro avg": {
+          "precision": 0.3003472222222222,
+          "recall": 0.35,
+          "f1-score": 0.29258241758241754,
+          "support": 40.0
+        },
+        "weighted avg": {
+          "precision": 0.3003472222222222,
+          "recall": 0.35,
+          "f1-score": 0.2925824175824176,
+          "support": 40.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          7,
+          2,
+          0,
+          1
+        ],
+        [
+          5,
+          5,
+          0,
+          0
+        ],
+        [
+          3,
+          6,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          2,
+          2
+        ]
+      ],
+      "label_order": [
+        "chatgpt",
+        "cohere-chat",
+        "llama-chat",
+        "mistral-chat"
+      ],
+      "n": 40
+    },
+    "poetry": {
+      "accuracy": 0.5,
+      "macro_f1": 0.4763815789473684,
+      "classification_report": {
+        "chatgpt": {
+          "precision": 0.6,
+          "recall": 0.9,
+          "f1-score": 0.72,
+          "support": 10.0
+        },
+        "cohere-chat": {
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1-score": 0.6,
+          "support": 10.0
+        },
+        "llama-chat": {
+          "precision": 0.5,
+          "recall": 0.3,
+          "f1-score": 0.375,
+          "support": 10.0
+        },
+        "mistral-chat": {
+          "precision": 0.2222222222222222,
+          "recall": 0.2,
+          "f1-score": 0.21052631578947367,
+          "support": 10.0
+        },
+        "accuracy": 0.5,
+        "macro avg": {
+          "precision": 0.4805555555555555,
+          "recall": 0.5,
+          "f1-score": 0.4763815789473684,
+          "support": 40.0
+        },
+        "weighted avg": {
+          "precision": 0.4805555555555555,
+          "recall": 0.5,
+          "f1-score": 0.4763815789473684,
+          "support": 40.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          6,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          2,
+          2,
+          2
+        ]
+      ],
+      "label_order": [
+        "chatgpt",
+        "cohere-chat",
+        "llama-chat",
+        "mistral-chat"
+      ],
+      "n": 40
+    },
+    "recipes": {
+      "accuracy": 0.8,
+      "macro_f1": 0.788284632034632,
+      "classification_report": {
+        "chatgpt": {
+          "precision": 0.8181818181818182,
+          "recall": 0.9,
+          "f1-score": 0.8571428571428571,
+          "support": 10.0
+        },
+        "cohere-chat": {
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1-score": 0.9090909090909091,
+          "support": 10.0
+        },
+        "llama-chat": {
+          "precision": 0.7272727272727273,
+          "recall": 0.8,
+          "f1-score": 0.7619047619047619,
+          "support": 10.0
+        },
+        "mistral-chat": {
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "f1-score": 0.625,
+          "support": 10.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8030303030303031,
+          "recall": 0.8,
+          "f1-score": 0.788284632034632,
+          "support": 40.0
+        },
+        "weighted avg": {
+          "precision": 0.8030303030303031,
+          "recall": 0.8,
+          "f1-score": 0.7882846320346321,
+          "support": 40.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          8,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          5
+        ]
+      ],
+      "label_order": [
+        "chatgpt",
+        "cohere-chat",
+        "llama-chat",
+        "mistral-chat"
+      ],
+      "n": 40
+    },
+    "reviews": {
+      "accuracy": 0.65,
+      "macro_f1": 0.631365693130399,
+      "classification_report": {
+        "chatgpt": {
+          "precision": 0.5625,
+          "recall": 0.9,
+          "f1-score": 0.6923076923076923,
+          "support": 10.0
+        },
+        "cohere-chat": {
+          "precision": 0.6666666666666666,
+          "recall": 0.8,
+          "f1-score": 0.7272727272727273,
+          "support": 10.0
+        },
+        "llama-chat": {
+          "precision": 0.8571428571428571,
+          "recall": 0.6,
+          "f1-score": 0.7058823529411765,
+          "support": 10.0
+        },
+        "mistral-chat": {
+          "precision": 0.6,
+          "recall": 0.3,
+          "f1-score": 0.4,
+          "support": 10.0
+        },
+        "accuracy": 0.65,
+        "macro avg": {
+          "precision": 0.671577380952381,
+          "recall": 0.65,
+          "f1-score": 0.631365693130399,
+          "support": 40.0
+        },
+        "weighted avg": {
+          "precision": 0.671577380952381,
+          "recall": 0.65,
+          "f1-score": 0.631365693130399,
+          "support": 40.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          8,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          6,
+          1
+        ],
+        [
+          4,
+          2,
+          1,
+          3
+        ]
+      ],
+      "label_order": [
+        "chatgpt",
+        "cohere-chat",
+        "llama-chat",
+        "mistral-chat"
+      ],
+      "n": 40
+    }
+  }
+}

@@ -24,7 +24,9 @@ Dataset structure:
 Build the subset with `python3 scripts/build_dataset.py`. See
 [data/README.md](data/README.md) for the exact filters, reproducibility manifest,
 and source-grouped 80/10/10 train/validation/test split.
-The dataset step is implemented; CNN/LSTM and RQ1/RQ3 experiments are next.
+The dataset and shared CNN/LSTM pipeline are implemented. See
+[rq1/README.md](rq1/README.md) for setup, training, and the first RQ1 results.
+RQ3 domain-held-out experiments are next.
 
 ## Repository Structure
 

@@ -68,7 +68,8 @@ orders; changing CSV row order does not change the result.
 
 Four-class balanced chance accuracy is 25%. The planned RQ3 comparison is
 leave-one-domain-out, with all models retrained for each held-out domain.
-CNN/LSTM implementation and experimental results are the next project steps.
+The shared CNN/LSTM implementation and initial RQ1 results are documented in
+`rq1/README.md`. RQ3 domain-held-out experiments are next.
 
 The Hugging Face dataset card lists the dataset under MIT. Retain attribution
 to RAID in the report. The manifest identifies exactly which public source
